@@ -16,13 +16,13 @@
 		5A1D17F8187C6FF300A2F332 /* SKSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D17F7187C6FF300A2F332 /* SKSAppDelegate.m */; };
 		5A1D1801187C6FF300A2F332 /* SKSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D1800187C6FF300A2F332 /* SKSViewController.m */; };
 		5A1D1804187C6FF300A2F332 /* SKSMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D1803187C6FF300A2F332 /* SKSMyScene.m */; };
-		5A1D1806187C6FF400A2F332 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A1D1805187C6FF400A2F332 /* Spaceship.png */; };
 		5A1D1808187C6FF400A2F332 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A1D1807187C6FF400A2F332 /* Images.xcassets */; };
 		5A1D180F187C6FF400A2F332 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1D180E187C6FF400A2F332 /* XCTest.framework */; };
 		5A1D1810187C6FF400A2F332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1D17E5187C6FF300A2F332 /* Foundation.framework */; };
 		5A1D1811187C6FF400A2F332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1D17E9187C6FF300A2F332 /* UIKit.framework */; };
 		5A1D1819187C6FF400A2F332 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A1D1817187C6FF400A2F332 /* InfoPlist.strings */; };
 		5A1D181B187C6FF400A2F332 /* SpriteKitSpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D181A187C6FF400A2F332 /* SpriteKitSpikeTests.m */; };
+		5A9EF854187C9AFE00C8B936 /* SKSFolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EF853187C9AFE00C8B936 /* SKSFolderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +51,14 @@
 		5A1D1800187C6FF300A2F332 /* SKSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSViewController.m; sourceTree = "<group>"; };
 		5A1D1802187C6FF300A2F332 /* SKSMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKSMyScene.h; sourceTree = "<group>"; };
 		5A1D1803187C6FF300A2F332 /* SKSMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKSMyScene.m; sourceTree = "<group>"; };
-		5A1D1805187C6FF400A2F332 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		5A1D1807187C6FF400A2F332 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5A1D180D187C6FF400A2F332 /* SpriteKitSpikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitSpikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A1D180E187C6FF400A2F332 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5A1D1816187C6FF400A2F332 /* SpriteKitSpikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitSpikeTests-Info.plist"; sourceTree = "<group>"; };
 		5A1D1818187C6FF400A2F332 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A1D181A187C6FF400A2F332 /* SpriteKitSpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitSpikeTests.m; sourceTree = "<group>"; };
+		5A9EF852187C9AFE00C8B936 /* SKSFolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSFolderView.h; sourceTree = "<group>"; };
+		5A9EF853187C9AFE00C8B936 /* SKSFolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSFolderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,9 +126,10 @@
 				5A1D1800187C6FF300A2F332 /* SKSViewController.m */,
 				5A1D1802187C6FF300A2F332 /* SKSMyScene.h */,
 				5A1D1803187C6FF300A2F332 /* SKSMyScene.m */,
-				5A1D1805187C6FF400A2F332 /* Spaceship.png */,
 				5A1D1807187C6FF400A2F332 /* Images.xcassets */,
 				5A1D17EE187C6FF300A2F332 /* Supporting Files */,
+				5A9EF852187C9AFE00C8B936 /* SKSFolderView.h */,
+				5A9EF853187C9AFE00C8B936 /* SKSFolderView.m */,
 			);
 			path = SpriteKitSpike;
 			sourceTree = "<group>";
@@ -238,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A1D1806187C6FF400A2F332 /* Spaceship.png in Resources */,
 				5A1D1808187C6FF400A2F332 /* Images.xcassets in Resources */,
 				5A1D17F2187C6FF300A2F332 /* InfoPlist.strings in Resources */,
 			);
@@ -262,6 +263,7 @@
 				5A1D1804187C6FF300A2F332 /* SKSMyScene.m in Sources */,
 				5A1D17F8187C6FF300A2F332 /* SKSAppDelegate.m in Sources */,
 				5A1D1801187C6FF300A2F332 /* SKSViewController.m in Sources */,
+				5A9EF854187C9AFE00C8B936 /* SKSFolderView.m in Sources */,
 				5A1D17F4187C6FF300A2F332 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
