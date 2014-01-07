@@ -11,8 +11,9 @@
 
 @implementation SKSFolder
 
--(id)initWithRect:(CGRect)rect {
+-(id)initWithName:(NSString *)name andRect:(CGRect)rect {
      if (self = [super init]) {
+         self.name = name;
          UIBezierPath* topLeftBezierPath = [[UIBezierPath alloc] init];
          int tabHeight = 10;
          [topLeftBezierPath moveToPoint:CGPointMake(-rect.size.width/2, -rect.size.height/2)];

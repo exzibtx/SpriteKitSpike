@@ -12,6 +12,6 @@
 @property (nonatomic, strong) NSString *folderName;
 @property (nonatomic, strong) NSMutableArray *subFolders;
 
--(id)initWithRect:(CGRect)rect;
+-(id)initWithName:(NSString *)name andRect:(CGRect)rect;
 
 @end
