@@ -22,7 +22,7 @@
 		5A1D1811187C6FF400A2F332 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1D17E9187C6FF300A2F332 /* UIKit.framework */; };
 		5A1D1819187C6FF400A2F332 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A1D1817187C6FF400A2F332 /* InfoPlist.strings */; };
 		5A1D181B187C6FF400A2F332 /* SpriteKitSpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1D181A187C6FF400A2F332 /* SpriteKitSpikeTests.m */; };
-		5A9EF854187C9AFE00C8B936 /* SKSFolderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EF853187C9AFE00C8B936 /* SKSFolderView.m */; };
+		5A9EF854187C9AFE00C8B936 /* SKSFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EF853187C9AFE00C8B936 /* SKSFolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +57,8 @@
 		5A1D1816187C6FF400A2F332 /* SpriteKitSpikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpriteKitSpikeTests-Info.plist"; sourceTree = "<group>"; };
 		5A1D1818187C6FF400A2F332 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A1D181A187C6FF400A2F332 /* SpriteKitSpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpriteKitSpikeTests.m; sourceTree = "<group>"; };
-		5A9EF852187C9AFE00C8B936 /* SKSFolderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSFolderView.h; sourceTree = "<group>"; };
-		5A9EF853187C9AFE00C8B936 /* SKSFolderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSFolderView.m; sourceTree = "<group>"; };
+		5A9EF852187C9AFE00C8B936 /* SKSFolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSFolder.h; sourceTree = "<group>"; };
+		5A9EF853187C9AFE00C8B936 /* SKSFolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSFolder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +128,8 @@
 				5A1D1803187C6FF300A2F332 /* SKSMyScene.m */,
 				5A1D1807187C6FF400A2F332 /* Images.xcassets */,
 				5A1D17EE187C6FF300A2F332 /* Supporting Files */,
-				5A9EF852187C9AFE00C8B936 /* SKSFolderView.h */,
-				5A9EF853187C9AFE00C8B936 /* SKSFolderView.m */,
+				5A9EF852187C9AFE00C8B936 /* SKSFolder.h */,
+				5A9EF853187C9AFE00C8B936 /* SKSFolder.m */,
 			);
 			path = SpriteKitSpike;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 				5A1D1804187C6FF300A2F332 /* SKSMyScene.m in Sources */,
 				5A1D17F8187C6FF300A2F332 /* SKSAppDelegate.m in Sources */,
 				5A1D1801187C6FF300A2F332 /* SKSViewController.m in Sources */,
-				5A9EF854187C9AFE00C8B936 /* SKSFolderView.m in Sources */,
+				5A9EF854187C9AFE00C8B936 /* SKSFolder.m in Sources */,
 				5A1D17F4187C6FF300A2F332 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

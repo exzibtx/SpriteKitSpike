@@ -8,7 +8,9 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface SKSFolderView : SKShapeNode
+@interface SKSFolder : SKShapeNode
+@property (nonatomic, strong) NSString *folderName;
+@property (nonatomic, strong) NSMutableArray *subFolders;
 
 -(id)initWithRect:(CGRect)rect;
 

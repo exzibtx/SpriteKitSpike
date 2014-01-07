@@ -7,13 +7,7 @@
 //
 
 #import "SKSMyScene.h"
-#import "SKSFolderView.h"
-
-@interface SKSMyScene()
-
-@property(nonatomic, strong) NSMutableArray *folderContents;
-
-@end
+#import "SKSFolder.h"
 
 @implementation SKSMyScene
 
@@ -24,19 +18,14 @@
         CGSize padding = CGSizeMake(20, 20);
         CGPoint location = CGPointMake(padding.width + folderSize.width/2, padding.height + folderSize.height/2);
         
-        SKSFolderView *folder = [[SKSFolderView alloc] initWithRect:CGRectMake(location.x, location.y, folderSize.width, folderSize.height)];
-        
+        SKSFolder *folder = [[SKSFolder alloc] initWithRect:CGRectMake(location.x, location.y, folderSize.width, folderSize.height)];
         [self  addChild:folder];
         
-//        SKShapeNode *folder = [self createFolderWithSize:CGRectMake(location.x, location.y, folderSize.width, folderSize.height)];
-//        [self addChild:folder];
-        self.folderContents = [[NSMutableArray alloc] init];
-        
-        [self.folderContents addObject:[[SKSFolderView alloc] initWithRect:CGRectMake(0, 0, folderSize.width, folderSize.height)]];
-        [self.folderContents addObject:[[SKSFolderView alloc] initWithRect:CGRectMake(0, 0, folderSize.width, folderSize.height)]];
-        [self.folderContents addObject:[[SKSFolderView alloc] initWithRect:CGRectMake(0, 0, folderSize.width, folderSize.height)]];
-        for (int i = 0; i < self.folderContents.count; i++) {
-            SKShapeNode *subFolder = self.folderContents[i];
+        [folder.subFolders addObject:[[SKSFolder alloc] initWithRect:CGRectMake(0, 0, folderSize.width, folderSize.height)]];
+        [folder.subFolders addObject:[[SKSFolder alloc] initWithRect:CGRectMake(0, 0, folderSize.width, folderSize.height)]];
+        [folder.subFolders addObject:[[SKSFolder alloc] initWithRect:CGRectMake(0, 0, folderSize.width, folderSize.height)]];
+        for (int i = 0; i < folder.subFolders.count; i++) {
+            SKShapeNode *subFolder = folder.subFolders[i];
             subFolder.position = CGPointMake(folder.position.x + ((i + 1) * folderSize.width) + ((i + 1) * padding.width), folder.position.y);
             [self addChild:subFolder];
         }
@@ -49,7 +38,7 @@
     
     for (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];        
-        SKShapeNode *folder = [[SKSFolderView alloc] initWithRect:CGRectMake(location.x, location.y, 100, 100)];
+        SKShapeNode *folder = [[SKSFolder alloc] initWithRect:CGRectMake(location.x, location.y, 100, 100)];
         [self addChild:folder];
     }
 }

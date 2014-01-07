@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 Asynchrony. All rights reserved.
 //
 
-#import "SKSFolderView.h"
+#import "SKSFolder.h"
 
 
-@implementation SKSFolderView
+@implementation SKSFolder
 
 -(id)initWithRect:(CGRect)rect {
      if (self = [super init]) {
@@ -28,12 +28,11 @@
          self.strokeColor = [UIColor blackColor];
          self.antialiased = NO;
          self.position = CGPointMake(rect.origin.x, rect.origin.y);
+         
+         self.subFolders = [[NSMutableArray alloc] init];
      }
     return self;
     
 }
-
--(void) createFolderWithRect:(CGRect)rect {
-    }
 
 @end
