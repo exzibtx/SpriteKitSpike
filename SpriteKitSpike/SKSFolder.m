@@ -31,6 +31,15 @@
          self.position = CGPointMake(rect.origin.x, rect.origin.y);
          
          self.subFolders = [[NSMutableArray alloc] init];
+         
+         SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+         
+         myLabel.text = name;
+         myLabel.fontSize = 20;
+         myLabel.fontColor = [SKColor blackColor];
+         
+         [self addChild:myLabel];
+
      }
     return self;
     
